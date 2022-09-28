@@ -7,7 +7,7 @@ namespace Crystals
         static void Main(string[] args)
         {
             int money;
-            int booksCount;
+            int books;
 
             int bookPrice = 4;
 
@@ -33,11 +33,11 @@ namespace Crystals
             Console.WriteLine($"");
 
             Console.Write($"Сколько книг желаете купить? ");
-            booksCount = Convert.ToInt32(Console.ReadLine());
+            books = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
-            money -= booksCount * bookPrice;
+            money -= books * bookPrice;
 
-            Console.WriteLine($"в Вашей сумке {booksCount} книг и {money} галеонов");
+            Console.WriteLine($"в Вашей сумке {books} книг и {money} галеонов");
         }
     }
 }
